@@ -14,8 +14,8 @@ const musicSchema = new mongoose.Schema({
   trackListing: [{ type: String, required: true }],
   musicians: [{ type: String, required: true }],
   production: [{ type: String, required: true }],
-  label: { type: String, required: true },
-  owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true}
+  label: { type: String, required: true }
+  // owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
 musicSchema.set('toJSON', {

@@ -19,7 +19,7 @@ const seedDatabase = async () => {
 
     //* Create showData with added owner field
     const musicWithUsers = musicSeeds.map(ite => {
-      return {...ite, owner: users[0]._id}
+      return {...ite, owner: userSeed[0]._id}
     })
 
     // Add Music Seeds Data
